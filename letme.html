@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Letme在线编辑器</title>
+	<title>Letme在线编辑器预览</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="js/jquery.js"></script>
 </head>
@@ -10,17 +10,16 @@
 	<div class="head-title">
 		<p>css style样式的实时编辑与效果显示实例页面</p>
 	</div>
-
 	<div class="main">
 		<!--code-->
 		<div class="code part">
 			<h3>代码:</h3>
 			<div class="show p20">
-				<style contenteditable>.example{padding: 5px; border: 1px solid #ccc; background-color: #fff;}</style>
+				<style contenteditable>.example{padding: 5px; background-color: #fff;}</style>
 			</div>
 			<!--div-->
 			<div class="input-code">
-				<textarea rows="25" cols="90" class="textarea"></textarea><br>
+				<textarea rows="25" cols="90" class="textarea from-control" id="code" name="code"></textarea><br>
 				<input type="button" value="Run" class="btn">
 			</div>
 		</div>
@@ -33,5 +32,6 @@
 		</div>
 	</div>
 	<script src="js/main.js"></script>
+	</textarea>
 </body>
 </html>
