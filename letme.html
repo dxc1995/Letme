@@ -11,20 +11,28 @@
 		<p>css style样式的实时编辑与效果显示实例页面</p>
 	</div>
 	<div class="main">
-		<!--code-->
 		<div class="code part">
-			<h3>代码:</h3>
+			<!--HTML-->
+			<div class="input-code">
+				<h3>html</h3>
+				<textarea class="textarea" id="code" class="code"></textarea><br>
+				<input type="button" value="Run" class="btn">
+			</div>
+
+			<!--JavaScript-->
+			<div class="input-code js-code">
+				<h3>JavaScript</h3>
+				<textarea  class="textarea js" name="js"></textarea><br>
+				<input type="button" value="Run" class="btn btn-js">
+			</div>
+		</div>
+		<div class="effect part">
+			<!--CSS-->
+			<h3>css</h3>
 			<div class="show p20">
 				<style contenteditable>.example{padding: 5px; background-color: #fff;}</style>
 			</div>
-			<!--div-->
-			<div class="input-code">
-				<textarea rows="25" cols="90" class="textarea from-control" id="code" name="code"></textarea><br>
-				<input type="button" value="Run" class="btn">
-			</div>
-		</div>
-		<!--demo-->
-		<div class="effect part">
+			<!--view-->
 			<h3>效果:</h3>
 			<div class="show p5">
 				<div class="example">测试用例</div>
@@ -32,6 +40,5 @@
 		</div>
 	</div>
 	<script src="js/main.js"></script>
-	</textarea>
 </body>
 </html>

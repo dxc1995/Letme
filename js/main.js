@@ -5,6 +5,12 @@ $(function() {
     
 	$(".btn").click(function() {
 		var data = $(".textarea").val();
+	
 		$(".example").html(data);
+	})
+
+	$(".btn-js").click(function() {
+		var data = $(".js").val();
+		eval(data);
 	})
 })
